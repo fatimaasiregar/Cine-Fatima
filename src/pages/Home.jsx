@@ -135,7 +135,7 @@ const Home = ({ onLogout }) => {
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <img
           className="w-full h-96 object-cover"
-          src="public/12345.jpg"
+          src="/12345.jpg"
           alt="Movie Background"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center p-4">
