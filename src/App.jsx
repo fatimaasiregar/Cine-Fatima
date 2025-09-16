@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./pages/Login";
 import Header from "./components/Header";
@@ -8,26 +8,17 @@ import About from "./pages/About";
 import Movies from "./pages/Movies";
 import Event from "./pages/Event";
 
-// Layout wrapper
+// Layout wrapper tanpa Header
 const Layout = ({ children }) => (
-  <>
-    <Header />
-    <main>{children}</main>
-    <Footer />
-  </>
+  <main className="min-h-[calc(100vh-100px)]">{children}</main> // Footer tetap di bawah
 );
 
-// ProtectedRoute untuk halaman yang butuh login
-const ProtectedRoute = ({ children }) => {
-  const [isLoggedIn, setIsLoggedIn] = useState(null);
-
-  useEffect(() => {
-    const loggedIn = localStorage.getItem("isLoggedIn") === "true";
-    setIsLoggedIn(loggedIn);
-  }, []);
-
-  if (isLoggedIn === null) return null; // tunggu cek login
-  return isLoggedIn ? children : <Navigate to="/login" replace />;
+// ProtectedRoute
+const ProtectedRoute = ({ children, isLoggedIn }) => {
+  if (!isLoggedIn) {
+    return <Navigate to="/login" replace />;
+  }
+  return children;
 };
 
 const App = () => {
@@ -40,6 +31,9 @@ const App = () => {
 
   return (
     <Router>
+      {/* Header hanya muncul sekali */}
+      <Header isLoggedIn={isLoggedIn} handleLogout={handleLogout} />
+
       <Routes>
         {/* Login page */}
         <Route
@@ -53,7 +47,7 @@ const App = () => {
         <Route
           path="/"
           element={
-            <ProtectedRoute>
+            <ProtectedRoute isLoggedIn={isLoggedIn}>
               <Layout>
                 <Home />
               </Layout>
@@ -63,7 +57,7 @@ const App = () => {
         <Route
           path="/about"
           element={
-            <ProtectedRoute>
+            <ProtectedRoute isLoggedIn={isLoggedIn}>
               <Layout>
                 <About />
               </Layout>
@@ -73,7 +67,7 @@ const App = () => {
         <Route
           path="/movies"
           element={
-            <ProtectedRoute>
+            <ProtectedRoute isLoggedIn={isLoggedIn}>
               <Layout>
                 <Movies />
               </Layout>
@@ -83,7 +77,7 @@ const App = () => {
         <Route
           path="/event"
           element={
-            <ProtectedRoute>
+            <ProtectedRoute isLoggedIn={isLoggedIn}>
               <Layout>
                 <Event />
               </Layout>
@@ -94,6 +88,9 @@ const App = () => {
         {/* Redirect semua route lain ke login */}
         <Route path="*" element={<Navigate to="/login" replace />} />
       </Routes>
+
+      {/* Footer hanya satu */}
+      <Footer />
     </Router>
   );
 };
