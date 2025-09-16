@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import Login from "./pages/Login";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -8,9 +8,9 @@ import About from "./pages/About";
 import Movies from "./pages/Movies";
 import Event from "./pages/Event";
 
-// Layout wrapper tanpa Header
+// Layout wrapper
 const Layout = ({ children }) => (
-  <main className="min-h-[calc(100vh-100px)]">{children}</main> // Footer tetap di bawah
+  <main className="min-h-[calc(100vh-100px)]">{children}</main>
 );
 
 // ProtectedRoute
@@ -19,6 +19,20 @@ const ProtectedRoute = ({ children, isLoggedIn }) => {
     return <Navigate to="/login" replace />;
   }
   return children;
+};
+
+// AppLayout: cek path untuk sembunyikan header/footer di login
+const AppLayout = ({ children, isLoggedIn, handleLogout }) => {
+  const location = useLocation();
+  const hideHeaderFooter = location.pathname === "/login";
+
+  return (
+    <>
+      {!hideHeaderFooter && <Header isLoggedIn={isLoggedIn} handleLogout={handleLogout} />}
+      {children}
+      {!hideHeaderFooter && <Footer />}
+    </>
+  );
 };
 
 const App = () => {
@@ -31,66 +45,60 @@ const App = () => {
 
   return (
     <Router>
-      {/* Header hanya muncul sekali */}
-      <Header isLoggedIn={isLoggedIn} handleLogout={handleLogout} />
+      <AppLayout isLoggedIn={isLoggedIn} handleLogout={handleLogout}>
+        <Routes>
+          {/* Login page */}
+          <Route
+            path="/login"
+            element={isLoggedIn ? <Navigate to="/" replace /> : <Login setIsLoggedIn={setIsLoggedIn} />}
+          />
 
-      <Routes>
-        {/* Login page */}
-        <Route
-          path="/login"
-          element={
-            isLoggedIn ? <Navigate to="/" replace /> : <Login setIsLoggedIn={setIsLoggedIn} />
-          }
-        />
+          {/* Protected pages */}
+          <Route
+            path="/"
+            element={
+              <ProtectedRoute isLoggedIn={isLoggedIn}>
+                <Layout>
+                  <Home />
+                </Layout>
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/about"
+            element={
+              <ProtectedRoute isLoggedIn={isLoggedIn}>
+                <Layout>
+                  <About />
+                </Layout>
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/movies"
+            element={
+              <ProtectedRoute isLoggedIn={isLoggedIn}>
+                <Layout>
+                  <Movies />
+                </Layout>
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/event"
+            element={
+              <ProtectedRoute isLoggedIn={isLoggedIn}>
+                <Layout>
+                  <Event />
+                </Layout>
+              </ProtectedRoute>
+            }
+          />
 
-        {/* Protected pages */}
-        <Route
-          path="/"
-          element={
-            <ProtectedRoute isLoggedIn={isLoggedIn}>
-              <Layout>
-                <Home />
-              </Layout>
-            </ProtectedRoute>
-          }
-        />
-        <Route
-          path="/about"
-          element={
-            <ProtectedRoute isLoggedIn={isLoggedIn}>
-              <Layout>
-                <About />
-              </Layout>
-            </ProtectedRoute>
-          }
-        />
-        <Route
-          path="/movies"
-          element={
-            <ProtectedRoute isLoggedIn={isLoggedIn}>
-              <Layout>
-                <Movies />
-              </Layout>
-            </ProtectedRoute>
-          }
-        />
-        <Route
-          path="/event"
-          element={
-            <ProtectedRoute isLoggedIn={isLoggedIn}>
-              <Layout>
-                <Event />
-              </Layout>
-            </ProtectedRoute>
-          }
-        />
-
-        {/* Redirect semua route lain ke login */}
-        <Route path="*" element={<Navigate to="/login" replace />} />
-      </Routes>
-
-      {/* Footer hanya satu */}
-      <Footer />
+          {/* Redirect semua route lain ke login */}
+          <Route path="*" element={<Navigate to="/login" replace />} />
+        </Routes>
+      </AppLayout>
     </Router>
   );
 };
