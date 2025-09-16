@@ -8,7 +8,7 @@ const moviesData = [
         title: "Inception",
         year: 2010,
         genre: "Sci-Fi",
-        poster: "public/Inception.jpeg",
+        poster: "/Inception.jpeg",
         rating: 8.8,
         description: "Seorang pencuri yang dapat masuk ke dalam mimpi orang lain diberi tugas terakhir yang berbahaya untuk menanamkan ide pada bawah sadar targetnya."
       },
@@ -26,7 +26,7 @@ const moviesData = [
         title: "The Dark Knight",
         year: 2008,
         genre: "Aksi",
-        poster: "public/the dark knight.jpeg",
+        poster: "/the dark knight.jpeg",
         rating: 9.0,
         description: "Batman berhadapan dengan Joker yang licik, seorang kriminal yang ingin mengacaukan Gotham City."
       },
@@ -98,7 +98,7 @@ const moviesData = [
         title: "Pulp Fiction",
         year: 1994,
         genre: "Kriminal",
-        poster: "public/Pulp Fiction.jpeg",
+        poster: "/Pulp Fiction.jpeg",
         rating: 8.9,
         description: "Beberapa cerita terjalin tentang dunia kriminal yang penuh aksi dan kejutan di Los Angeles."
       },
@@ -116,7 +116,7 @@ const moviesData = [
         title: "The Lord of the Rings",
         year: 2001,
         genre: "Fantasi",
-        poster: "public/The Lord of the Rings.jpeg",
+        poster: "/The Lord of the Rings.jpeg",
         rating: 8.8,
         description: "Sekelompok pahlawan bersatu untuk membawa cincin kuat ke Mordor dan menghancurkannya demi menyelamatkan dunia."
       },
@@ -125,7 +125,7 @@ const moviesData = [
         title: "The Return of the King",
         year: 2003,
         genre: "Fantasi",
-        poster: "public/The Return of the King.jpeg",
+        poster: "/The Return of the King.jpeg",
         rating: 9.0,
         description: "Pertempuran epik terakhir melawan kejahatan besar untuk menyelamatkan Middle-earth."
       },
@@ -170,7 +170,7 @@ const moviesData = [
         title: "The Avengers",
         year: 2012,
         genre: "Aksi",
-        poster: "public/Avengers.jpeg",
+        poster: "/Avengers.jpeg",
         rating: 8.0,
         description: "Tim superhero berkumpul untuk melindungi bumi dari invasi alien yang menghancurkan."
       },
@@ -179,7 +179,7 @@ const moviesData = [
         title: "Black Panther",
         year: 2018,
         genre: "Aksi",
-        poster: "public/black panther.jpeg",
+        poster: "/black panther.jpeg",
         rating: 7.3,
         description: "Raja Wakanda harus melindungi negerinya dari ancaman yang datang dari dalam dan luar negeri."
       },
@@ -188,7 +188,7 @@ const moviesData = [
         title: "Gladiator",
         year: 2000,
         genre: "Drama",
-        poster: "public/Gladiator.jpeg",
+        poster: "/Gladiator.jpeg",
         rating: 8.5,
         description: "Seorang jenderal Roma yang dikhianati mencari pembalasan sebagai gladiator di arena Colosseum."
       },
@@ -197,7 +197,7 @@ const moviesData = [
         title: "Braveheart",
         year: 1995,
         genre: "Sejarah",
-        poster: "public/Braveheart.jpeg",
+        poster: "/Braveheart.jpeg",
         rating: 8.3,
         description: "William Wallace memimpin pemberontakan rakyat Skotlandia melawan tirani Inggris."
       },
@@ -206,7 +206,7 @@ const moviesData = [
         title: "The Silence of theLambs",
         year: 1991,
         genre: "Thriller",
-        poster: "public/The Silence of theLambs.jpeg",
+        poster: "/The Silence of theLambs.jpeg",
         rating: 8.6,
         description: "Seorang agen FBI bekerja sama dengan seorang pembunuh berantai yang jenius untuk menangkap seorang pembunuh lain."
       },
@@ -215,7 +215,7 @@ const moviesData = [
         title: "The Green Mile",
         year: 1999,
         genre: "Drama",
-        poster: "public/The Green Mile.jpeg",
+        poster: "/The Green Mile.jpeg",
         rating: 8.6,
         description: "Seorang penjaga penjara menjalin hubungan dengan narapidana yang memiliki kekuatan penyembuhan luar biasa."
       },
@@ -224,7 +224,7 @@ const moviesData = [
         title: "Schindler's List",
         year: 1993,
         genre: "Drama",
-        poster: "public/Schindler's List.jpeg",
+        poster: "/Schindler's List.jpeg",
         rating: 9.0,
         description: "Kisah nyata tentang seorang pengusaha Jerman yang menyelamatkan lebih dari seribu orang Yahudi dari holocaust."
       },
@@ -233,7 +233,7 @@ const moviesData = [
         title: "Avatar",
         year: 2009,
         genre: "Sci-Fi",
-        poster: "public/avatar.jpeg",
+        poster: "/avatar.jpeg",
         rating: 7.8,
         description: "Seorang mantan marinir yang lumpuh menjelajahi dunia Pandora menggunakan tubuh avatar untuk berinteraksi dengan penduduk asli."
       },
@@ -251,7 +251,7 @@ const moviesData = [
         title: "The Revenant",
         year: 2015,
         genre: "Petualangan",
-        poster: "public/The Revenant.jpeg",
+        poster: "/The Revenant.jpeg",
         rating: 8.0,
         description: "Seorang pemburu bertahan hidup di alam liar dan mencari balas dendam setelah dikhianati oleh rekan-rekannya."
       },
@@ -260,7 +260,7 @@ const moviesData = [
         title: "Whiplash",
         year: 2014,
         genre: "Drama",
-        poster: "public/Whiplash.jpeg",
+        poster: "/Whiplash.jpeg",
         rating: 8.5,
         description: "Seorang drummer muda berjuang untuk mendapatkan pengakuan di dunia musik jazz, di bawah bimbingan seorang guru yang keras."
       },
@@ -269,7 +269,7 @@ const moviesData = [
         title: "The Social Network",
         year: 2010,
         genre: "Drama",
-        poster: "public/The Social Network.jpeg",
+        poster: "/The Social Network.jpeg",
         rating: 8.0,
         description: "Kisah nyata tentang penciptaan Facebook dan perjalanan kontroversial Mark Zuckerberg dalam membangun kerajaan teknologi."
       },
@@ -278,7 +278,7 @@ const moviesData = [
         title: "No Country for Old Men",
         year: 2007,
         genre: "Kriminal",
-        poster: "public/No Country for Old Men.jpeg",
+        poster: "/No Country for Old Men.jpeg",
         rating: 8.1,
         description: "Seorang pria menemukan uang hasil kejahatan dan menjadi buronan dari seorang pembunuh profesional dan seorang sheriff."
       },
@@ -287,7 +287,7 @@ const moviesData = [
         title: "The Wolf of Wall Street",
         year: 2013,
         genre: "Drama",
-        poster: "public/The Wolf of Wall Street.jpeg",
+        poster: "/The Wolf of Wall Street.jpeg",
         rating: 8.2,
         description: "Kisah nyata seorang pialang saham yang ambisius yang menjatuhkan dirinya ke dalam dunia penipuan dan penyalahgunaan."
       },
@@ -296,7 +296,7 @@ const moviesData = [
         title: "La La Land",
         year: 2016,
         genre: "Drama",
-        poster: "public/La La Land.jpeg",
+        poster: "/La La Land.jpeg",
         rating: 8.0,
         description: "Seorang musisi jazz dan seorang aktris yang bercita-cita tinggi menjalin hubungan di tengah perjuangan karier mereka."
       },
@@ -305,7 +305,7 @@ const moviesData = [
         title: "The Truman Show",
         year: 1998,
         genre: "Drama",
-        poster: "public/The Truman Show.jpeg",
+        poster: "/The Truman Show.jpeg",
         rating: 8.1,
         description: "Seorang pria menemukan bahwa seluruh hidupnya adalah sebuah pertunjukan realitas yang disiarkan kepada dunia tanpa sepengetahuannya."
       },
@@ -314,7 +314,7 @@ const moviesData = [
         title: "Shutter Island",
         year: 2010,
         genre: "Thriller",
-        poster: "public/Shutter Island.jpeg",
+        poster: "/Shutter Island.jpeg",
         rating: 8.1,
         description: "Seorang detektif penyelidik sebuah rumah sakit jiwa yang misterius di pulau terpencil dan mulai mempertanyakan realitas."
       },
@@ -323,7 +323,7 @@ const moviesData = [
         title: "The Big Lebowski",
         year: 1998,
         genre: "Komedi",
-        poster: "public/The Big Lebowski.jpeg",
+        poster: "/The Big Lebowski.jpeg",
         rating: 8.1,
         description: "Seorang pria santai yang dikenal sebagai 'The Dude' terjebak dalam situasi penuh kekacauan setelah kesalahan identitas."
       },
@@ -332,7 +332,7 @@ const moviesData = [
         title: "The Departed",
         year: 2006,
         genre: "Kriminal",
-        poster: "public/The Departed.jpeg",
+        poster: "/The Departed.jpeg",
         rating: 8.5,
         description: "Dua orang, satu sebagai polisi dan satu sebagai mafia, berusaha saling mengungkap identitas masing-masing di tengah-tengah dunia kriminal Boston."
       },
@@ -341,7 +341,7 @@ const moviesData = [
         title: "The Dark Knight Rises",
         year: 2012,
         genre: "Aksi",
-        poster: "public/The Dark Knight Rises.jpeg",
+        poster: "/The Dark Knight Rises.jpeg",
         rating: 8.4,
         description: "Batman kembali untuk melawan ancaman baru yang lebih besar, Bane, yang berencana menghancurkan Gotham City."
       },
@@ -350,7 +350,7 @@ const moviesData = [
         title: "The Martian",
         year: 2015,
         genre: "Sci-Fi",
-        poster: "public/The Martian.jpeg",
+        poster: "/The Martian.jpeg",
         rating: 8.0,
         description: "Seorang astronot yang terdampar di Mars berusaha bertahan hidup dengan keterbatasan sumber daya sambil mencoba menghubungi Bumi."
       },
@@ -359,7 +359,7 @@ const moviesData = [
         title: "12 Angry Men",
         year: 1957,
         genre: "Drama",
-        poster: "public/12 Angry Men.jpeg",
+        poster: "/12 Angry Men.jpeg",
         rating: 9.0,
         description: "Sebelas juri lainnya berusaha memutuskan nasib seorang pemuda yang dituduh membunuh ayahnya dalam sebuah persidangan yang penuh ketegangan."
       },
@@ -368,7 +368,7 @@ const moviesData = [
         title: "The Goodfellas",
         year: 1990,
         genre: "Kriminal",
-        poster: "public/The Goodfellas.jpeg",
+        poster: "/The Goodfellas.jpeg",
         rating: 8.7,
         description: "Kisah nyata tentang kehidupan seorang gangster dan hubungannya dengan dunia kriminal yang berbahaya."
       },
@@ -377,7 +377,7 @@ const moviesData = [
         title: "The Godfather: Part II",
         year: 1974,
         genre: "Kriminal",
-        poster: "public/The Godfather.jpeg",
+        poster: "/The Godfather.jpeg",
         rating: 9.0,
         description: "Melanjutkan kisah keluarga mafia Corleone, menyoroti perjuangan Michael Corleone untuk mempertahankan kekuasaannya."
       },
@@ -386,7 +386,7 @@ const moviesData = [
         title: "Citizen Kane",
         year: 1941,
         genre: "Drama",
-        poster: "public/Citizen Kane.jpeg",
+        poster: "/Citizen Kane.jpeg",
         rating: 8.3,
         description: "Kisah hidup seorang magnat media yang misterius, ditelusuri oleh seorang jurnalis untuk memahami arti dari kata terakhirnya."
       },
@@ -404,7 +404,7 @@ const moviesData = [
         title: "Django Unchained",
         year: 2012,
         genre: "Western",
-        poster: "public/Django Unchained.jpeg",
+        poster: "/Django Unchained.jpeg",
         rating: 8.4,
         description: "Seorang mantan budak bekerja sama dengan seorang pemburu hadiah untuk menyelamatkan istrinya dari seorang pemilik perkebunan yang kejam."
       },
@@ -413,7 +413,7 @@ const moviesData = [
         title: "Blade Runner 2049",
         year: 2017,
         genre: "Sci-Fi",
-        poster: "public/Blade Runner 2049.jpeg",
+        poster: "/Blade Runner 2049.jpeg",
         rating: 8.0,
         description: "Seorang polisi yang juga seorang replikant menyelidiki misteri yang dapat mengubah masa depan umat manusia."
       },
@@ -422,7 +422,7 @@ const moviesData = [
         title: "The Shining",
         year: 1980,
         genre: "Horror",
-        poster: "public/The Shining.jpeg",
+        poster: "/The Shining.jpeg",
         rating: 8.4,
         description: "Seorang pria yang bekerja sebagai penjaga musim dingin di sebuah hotel terpencil mulai kehilangan kewarasannya akibat pengaruh supranatural."
       },
@@ -431,7 +431,7 @@ const moviesData = [
         title: "A Clockwork Orange",
         year: 1971,
         genre: "Drama",
-        poster: "public/A Clockwork Orange.jpeg",
+        poster: "/A Clockwork Orange.jpeg",
         rating: 8.3,
         description: "Seorang pemuda yang terlibat dalam kekerasan ekstrem mencoba untuk keluar dari dunia kejahatan setelah menjalani eksperimen sosial yang brutal."
   }
