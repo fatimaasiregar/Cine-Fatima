@@ -17,7 +17,7 @@ const moviesData = [
         title: "Interstellar",
         year: 2014,
         genre: "Petualangan",
-        poster: "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg",
+        poster: "/Interstellar.jpeg",
         rating: 8.6,
         description: "Sekelompok penjelajah angkasa mencari planet baru untuk menyelamatkan umat manusia dari kehancuran bumi."
       },
@@ -35,7 +35,7 @@ const moviesData = [
         title: "The Matrix",
         year: 1999,
         genre: "Sci-Fi",
-        poster: "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg",
+        poster: "/the matrix.jpeg",
         rating: 8.7,
         description: "Seorang hacker menemukan kebenaran mengejutkan tentang dunia tempat ia tinggal dan bergabung dalam pemberontakan melawan penguasa tiran."
       },
@@ -44,7 +44,7 @@ const moviesData = [
         title: "Parasite",
         year: 2019,
         genre: "Thriller",
-        poster: "https://upload.wikimedia.org/wikipedia/en/5/53/Parasite_%282019_film%29.png",
+        poster: "/Parasite.jpeg",
         rating: 8.6,
         description: "Keluarga miskin menyusup ke kehidupan keluarga kaya, namun rencana mereka membawa konsekuensi yang tak terduga."
       },
@@ -53,7 +53,7 @@ const moviesData = [
         title: "Avengers: Endgame",
         year: 2019,
         genre: "Aksi",
-        poster: "https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg",
+        poster: "/Avengers.jpeg",
         rating: 8.4,
         description: "Para Avengers bersatu untuk mengalahkan Thanos dan memulihkan keseimbangan alam semesta."
       },
@@ -62,7 +62,7 @@ const moviesData = [
         title: "The Shawshank Redemption",
         year: 1994,
         genre: "Drama",
-        poster: "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg",
+        poster: "/the shaw.jpg",
         rating: 9.3,
         description: "Seorang pria dipenjara atas tuduhan pembunuhan berjuang untuk kebebasan dan harapan di penjara Shawshank."
       },
@@ -71,7 +71,7 @@ const moviesData = [
         title: "Forrest Gump",
         year: 1994,
         genre: "Drama",
-        poster: "https://upload.wikimedia.org/wikipedia/en/6/67/Forrest_Gump_poster.jpg",
+        poster: "/Forrest Gump.jpeg",
         rating: 8.8,
         description: "Perjalanan hidup luar biasa seorang pria sederhana dengan hati yang tulus dan pengaruh besar."
       },
@@ -80,7 +80,7 @@ const moviesData = [
         title: "Joker",
         year: 2019,
         genre: "Drama",
-        poster: "https://upload.wikimedia.org/wikipedia/en/e/e1/Joker_%282019_film%29_poster.jpg",
+        poster: "/joker.jpeg",
         rating: 8.4,
         description: "Kisah tragis seorang pria yang terpinggirkan oleh masyarakat, berubah menjadi musuh terbesar Gotham."
       },
@@ -89,7 +89,7 @@ const moviesData = [
         title: "Fight Club",
         year: 1999,
         genre: "Drama",
-        poster: "https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg",
+        poster: "/Fight Club.jpg",
         rating: 8.8,
         description: "Seorang pria terjebak dalam hidup monoton menemukan pelarian melalui klub pertarungan bawah tanah."
       },
@@ -107,7 +107,7 @@ const moviesData = [
         title: "The Godfather",
         year: 1972,
         genre: "Kriminal",
-        poster: "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg",
+        poster: "/The Godfather.jpeg",
         rating: 9.2,
         description: "Kisah epik tentang keluarga mafia Corleone yang berjuang mempertahankan kekuasaannya di dunia bawah tanah."
       },
@@ -134,7 +134,7 @@ const moviesData = [
         title: "Star Wars",
         year: 1977,
         genre: "Sci-Fi",
-        poster: "https://upload.wikimedia.org/wikipedia/en/8/87/StarWarsMoviePoster1977.jpg",
+        poster: "/Star Wars.jpeg",
         rating: 8.6,
         description: "Seorang petani muda memulai perjalanan heroik untuk melawan Kekaisaran dan menyelamatkan galaksi."
       },
@@ -143,7 +143,7 @@ const moviesData = [
         title: "The Lion King",
         year: 1994,
         genre: "Animasi",
-        poster: "https://upload.wikimedia.org/wikipedia/en/3/3d/The_Lion_King_poster.jpg",
+        poster: "/The Lion King.jpg",
         rating: 8.5,
         description: "Kisah epik seekor singa muda yang mencari tempatnya sebagai raja di hutan belantara."
       },
@@ -152,7 +152,7 @@ const moviesData = [
         title: "Toy Story",
         year: 1995,
         genre: "Animasi",
-        poster: "https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg",
+        poster: "/Toy Story.jpg",
         rating: 8.3,
         description: "Mainan hidup mengungkap persahabatan dan petualangan dalam kehidupan sehari-hari mereka."
       },
@@ -161,7 +161,7 @@ const moviesData = [
         title: "Finding Nemo",
         year: 2003,
         genre: "Animasi",
-        poster: "https://upload.wikimedia.org/wikipedia/en/2/29/Finding_Nemo.jpg",
+        poster: "/Finding Nemo.jpg",
         rating: 8.1,
         description: "Seekor ikan badut melakukan perjalanan menakjubkan untuk menemukan anaknya yang hilang."
       },
@@ -242,7 +242,7 @@ const moviesData = [
         title: "The Prestige",
         year: 2006,
         genre: "Drama",
-        poster: "https://upload.wikimedia.org/wikipedia/en/d/d2/Prestige_poster.jpg",
+        poster: "/The Prestige.jpg",
         rating: 8.5,
         description: "Dua pesulap saling bersaing untuk menciptakan trik sulap terbaik, yang berujung pada obsesi dan pengkhianatan."
       },
@@ -395,7 +395,7 @@ const moviesData = [
         title: "Inglourious Basterds",
         year: 2009,
         genre: "Perang",
-        poster: "https://upload.wikimedia.org/wikipedia/en/c/c3/Inglourious_Basterds_poster.jpg",
+        poster: "/Inglourious Basterds.jpg",
         rating: 8.3,
         description: "Sekelompok tentara Amerika yang berperang melawan Nazi di Prancis selama Perang Dunia II, dipimpin oleh seorang komandan yang kejam."
       },
@@ -462,18 +462,16 @@ const Movies = () => {
   const closePopup = () => setSelectedMovie(null);
 
   return (
-<div className="min-h-screen bg-gray-900 text-white py-8 px-4 sm:px-6 lg:px-8 pt-32">
-  {/* pt-32 -> memberi jarak atas supaya header tidak menutupi */}
+<div className="min-h-screen bg-gray-900 text-white pt-32 px-4 sm:px-6 lg:px-8">
   {/* Header */}
-  <div className="max-w-7xl mx-auto text-center mb-8">
-    <h1 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-4 font-cinzel">
+  <header className="max-w-3xl mx-auto text-center mb-12">
+    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-yellow-400 mb-4 font-cinzel leading-tight">
       Movie Collection
     </h1>
-    <p className="text-xl text-gray-300">
-      Discover and explore our curated selection of films
+    <p className="text-sm sm:text-base md:text-lg text-gray-300">
+      Discover and explore our curated selection of films from all genres, including the latest releases and timeless classics.
     </p>
-  </div>
-
+  </header>
 {/* Filters and Sorting - Improved Version */}
 <div className="max-w-7xl mx-auto mb-8">
   <div className="bg-gray-800 p-6 rounded-xl shadow-2xl border border-gray-700">

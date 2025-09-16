@@ -58,9 +58,7 @@ const App = () => {
             path="/"
             element={
               <ProtectedRoute isLoggedIn={isLoggedIn}>
-                <Layout>
                   <Home />
-                </Layout>
               </ProtectedRoute>
             }
           />
@@ -68,9 +66,7 @@ const App = () => {
             path="/about"
             element={
               <ProtectedRoute isLoggedIn={isLoggedIn}>
-                <Layout>
                   <About />
-                </Layout>
               </ProtectedRoute>
             }
           />
@@ -78,9 +74,7 @@ const App = () => {
             path="/movies"
             element={
               <ProtectedRoute isLoggedIn={isLoggedIn}>
-                <Layout>
                   <Movies />
-                </Layout>
               </ProtectedRoute>
             }
           />
@@ -88,9 +82,7 @@ const App = () => {
             path="/event"
             element={
               <ProtectedRoute isLoggedIn={isLoggedIn}>
-                <Layout>
                   <Event />
-                </Layout>
               </ProtectedRoute>
             }
           />
