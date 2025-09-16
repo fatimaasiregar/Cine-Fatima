@@ -462,16 +462,18 @@ const Movies = () => {
   const closePopup = () => setSelectedMovie(null);
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white py-8 px-4 sm:px-6 lg:px-8">
-      {/* Header */}
-      <div className="max-w-7xl mx-auto text-center mb-8">
-        <h1 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-4 font-cinzel">
-          Movie Collection
-        </h1>
-        <p className="text-xl text-gray-300">
-          Discover and explore our curated selection of films
-        </p>
-      </div>
+<div className="min-h-screen bg-gray-900 text-white py-8 px-4 sm:px-6 lg:px-8 pt-32">
+  {/* pt-32 -> memberi jarak atas supaya header tidak menutupi */}
+  {/* Header */}
+  <div className="max-w-7xl mx-auto text-center mb-8">
+    <h1 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-4 font-cinzel">
+      Movie Collection
+    </h1>
+    <p className="text-xl text-gray-300">
+      Discover and explore our curated selection of films
+    </p>
+  </div>
+
 {/* Filters and Sorting - Improved Version */}
 <div className="max-w-7xl mx-auto mb-8">
   <div className="bg-gray-800 p-6 rounded-xl shadow-2xl border border-gray-700">
